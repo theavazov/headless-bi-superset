@@ -1,0 +1,96 @@
+.gt {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+    width: 100%;
+    min-height: 0;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.gt:hover {
+    transform: translateY(-2px);
+    border-color: rgba(217, 164, 65, .45);
+    box-shadow: 0 1px 0 rgba(241, 231, 208, .05) inset, 0 22px 46px -20px rgba(217, 164, 65, .35);
+}
+
+.gt:hover::after {
+    opacity: .9;
+}
+
+.gt_ico svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.gt::after {
+    content: "⤢";
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    font-size: 10px;
+    color: var(--gold);
+    opacity: 0;
+    transition: opacity .18s;
+}
+
+.gt_txt {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.gt_ico {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 0;
+    border: 1px solid rgba(217, 164, 65, .4);
+    color: var(--gold-l);
+    background: radial-gradient(circle at 34% 30%, rgba(217, 164, 65, .16), rgba(217, 164, 65, .03));
+}
+
+.gt_v {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    color: var(--cream);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+}
+
+.gt_v small {
+    font-size: 12px;
+    color: var(--gold-l);
+}
+
+.gt_l {
+    font-size: 9px;
+    font-weight: 600;
+    color: var(--ink-2);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    line-height: 1.223;
+}
+
+.gt_d {
+    font-size: 9.5px;
+    font-weight: 500;
+    color: var(--ink-3);
+    margin-top: 2px;
+    line-height: 1.158;
+}
