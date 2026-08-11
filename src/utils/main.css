@@ -118,4 +118,8 @@ body {
   .logo-tile img {
     height: 56px;
   }
+
+  .footer-inner {
+    flex-direction: column;
+  }
 }

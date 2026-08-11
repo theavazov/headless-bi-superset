@@ -135,6 +135,67 @@ const option = {
             ],
         },
     ],
+
+    media: [
+        {
+            query: {
+                maxWidth: 600,
+            },
+
+            option: {
+                legend: {
+                    right: '4%',
+                    textStyle: {
+                        fontSize: 10,
+                    },
+                },
+
+                series: [
+                    {
+                        center: ['30%', '50%'],
+                        radius: ['42%', '58%'],
+                    },
+                ],
+
+                media: [
+                    {
+                        query: {
+                            maxWidth: 600,
+                        },
+                        option: {
+                            series: [
+                                {
+                                    center: ['30%', '46%'],
+                                    radius: ['42%', '58%'],
+                                },
+                            ],
+                            graphic: [
+                                {
+                                    type: 'group',
+                                    left: '10%',
+                                    top: '30%',
+                                    bounding: 'raw',
+
+                                    children: [
+                                        {
+                                            type: 'text',
+                                            left: 'center',
+                                            top: -10,
+                                        },
+                                        {
+                                            type: 'text',
+                                            left: 'center',
+                                            top: 20,
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+    ],
 };
 
 export const PieChart = ({ props }: { props: IPieChart }) => {

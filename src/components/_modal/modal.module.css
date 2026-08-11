@@ -210,4 +210,14 @@
         top: 17px;
         right: 17px;
     }
+
+    .modal_header__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .kpis_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

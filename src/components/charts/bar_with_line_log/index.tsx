@@ -42,7 +42,7 @@ const option = {
 
         itemWidth: 8,
         itemHeight: 8,
-        itemGap: 12,
+        itemGap: 24,
 
         icon: 'roundRect',
 
