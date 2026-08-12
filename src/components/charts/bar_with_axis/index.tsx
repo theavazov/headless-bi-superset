@@ -169,7 +169,6 @@ const option = {
         {
             name: 'Прибыль',
             type: 'line',
-            yAxisIndex: 1,
 
             data: [
                 85, 88, 92, 100,
