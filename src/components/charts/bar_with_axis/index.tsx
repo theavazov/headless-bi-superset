@@ -109,24 +109,55 @@ const option = {
         },
     },
 
-    yAxis: {
-        type: 'value',
+    yAxis: [
+        // Left axis — for bar
+        {
+            type: 'value',
 
-        splitLine: {
-            lineStyle: {
-                color: '#2B2822',
+            splitLine: {
+                lineStyle: {
+                    color: '#2B2822',
+                },
+            },
+
+            axisLabel: {
+                color: '#716B5E',
+                fontSize: 10,
+            },
+
+            axisLine: {
+                show: false,
             },
         },
+        {
+            // Right axis — for line
+            type: 'value',
 
-        axisLabel: {
-            color: '#716B5E',
-            fontSize: 10,
-        },
+            position: 'right',
 
-        axisLine: {
-            show: false,
+            min: 0,
+            max: 100,
+            interval: 10,
+
+            splitLine: {
+                show: false,
+            },
+
+            axisLabel: {
+                color: '#716B5E',
+                fontSize: 10,
+                formatter: '{value}%',
+            },
+
+            axisLine: {
+                show: false,
+            },
+
+            axisTick: {
+                show: false,
+            },
         },
-    },
+    ],
 
     series: [
         {
@@ -168,6 +199,7 @@ const option = {
         {
             name: 'Прибыль',
             type: 'line',
+            yAxisIndex: 1,
 
             data: [
                 85, 88, 92, 100,

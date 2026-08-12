@@ -61,7 +61,7 @@ export const Home = () => {
 
                 <div className={styles.container_top}>
 
-                    <button className="d-card logo-tile">
+                    <button className="logo-tile">
                         <img src={logo} alt="HUMO logo" />
                     </button>
 

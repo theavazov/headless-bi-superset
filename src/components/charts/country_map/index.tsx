@@ -135,6 +135,18 @@ const option = {
             },
         },
     ],
+
+    emphasis: {
+        itemStyle: {
+            borderColor: '#E8E2D4',
+            borderWidth: 1.5,
+
+            shadowBlur: 12,
+            shadowColor: 'rgba(223, 175, 66, 0.55)',
+            shadowOffsetX: 0,
+            shadowOffsetY: 2,
+        },
+    },
 };
 
 export const CountryMapChart = ({ props }: { props: ICountryMapChart }) => {
