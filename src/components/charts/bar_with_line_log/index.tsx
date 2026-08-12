@@ -59,10 +59,10 @@ const option = {
     },
 
     grid: {
-        left: 65,
-        right: 12,
+        left: 20,
+        right: 15,
         top: 15,
-        bottom: 60,
+        bottom: 45,
     },
 
     // -------------------------
@@ -109,7 +109,7 @@ const option = {
             interval: 2,
         },
 
-        name: 'Дата',
+        // name: 'Дата',
 
         nameLocation: 'middle',
         nameGap: 28,
@@ -131,7 +131,7 @@ const option = {
         min: 1e4,
         max: 1e14,
 
-        name: 'Объём транзакций (сум), Кол-во POS',
+        // name: 'Объём транзакций (сум), Кол-во POS',
 
         nameLocation: 'middle',
         nameGap: 48,

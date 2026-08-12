@@ -109,55 +109,25 @@ const option = {
         },
     },
 
-    yAxis: [
-        // Left axis — for bar
-        {
-            type: 'value',
+    yAxis:
+    {
+        type: 'value',
 
-            splitLine: {
-                lineStyle: {
-                    color: '#2B2822',
-                },
-            },
-
-            axisLabel: {
-                color: '#716B5E',
-                fontSize: 10,
-            },
-
-            axisLine: {
-                show: false,
+        splitLine: {
+            lineStyle: {
+                color: '#2B2822',
             },
         },
-        {
-            // Right axis — for line
-            type: 'value',
 
-            position: 'right',
-
-            min: 0,
-            max: 100,
-            interval: 10,
-
-            splitLine: {
-                show: false,
-            },
-
-            axisLabel: {
-                color: '#716B5E',
-                fontSize: 10,
-                formatter: '{value}%',
-            },
-
-            axisLine: {
-                show: false,
-            },
-
-            axisTick: {
-                show: false,
-            },
+        axisLabel: {
+            color: '#716B5E',
+            fontSize: 10,
         },
-    ],
+
+        axisLine: {
+            show: false,
+        },
+    },
 
     series: [
         {
