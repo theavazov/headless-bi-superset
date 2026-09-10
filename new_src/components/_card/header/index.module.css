@@ -1,0 +1,46 @@
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.header_top__left {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--t4);
+    flex-shrink: 0;
+    padding-right: 96px;
+}
+
+.header_top__right {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--t4);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.ttl {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--t1);
+    line-height: 1.2;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.sub {
+    font-size: 10px;
+    color: var(--t3);
+    margin-top: 1px;
+    flex-shrink: 0;
+    line-height: 14px;
+}

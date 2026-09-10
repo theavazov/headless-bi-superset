@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "./charts.css";
+
+:root {
+  --bg: #F7F8FA;
+  --surf: #fff;
+  --bdr: #E4E8EF;
+  --bdr2: #C8D0DC;
+  --humo: #1A6FFF;
+  --humo-l: #DBEAFE;
+  --humo-d: #1E40AF;
+  --t1: #111827;
+  --t2: #374151;
+  --t3: #6B7280;
+  --t4: #9CA3AF;
+  --c-blue: #1A6FFF;
+  --c-blue-l: #CDCEF8;
+  --c-purple: #9054ED;
+  --c-purple-l: #DDCAF2;
+  --c-green: #0E9B62;
+  --c-green-l: #ACDCC3;
+  --c-amber: #E5940F;
+  --c-amber-l: #EDCCAA;
+  --c-red: #E32E2A;
+  --c-red-l: #FCC5BA;
+  --c-grey: #8E97A8;
+  --c-grey-l: #C2C8D2;
+  --r: 12px;
+  --gap: 8px;
+}
+
+#social .button-icon {
+  filter: invert(1) brightness(2);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+body {
+  padding-inline: 8px;
+  background: var(--bg);
+  /* font-family: "Inter", sans-serif; */
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: calc(1920px + 16px);
+}
+
+.container-lg {
+  max-width: calc(1440px + 30px);
+}
+
+.container-md {
+  max-width: calc(1200px + 30px);
+}
+
+.btn_logout {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn_logout svg {
+  transition: .3s;
+}
+
+.btn_logout:hover {
+  color: var(--ink);
+}
+
+.btn_logout:hover svg {
+  color: #bf6547;
+}
+
+.d-card {
+  background: var(--surf);
+  border: 1px solid var(--bdr);
+  border-radius: var(--r);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
+}
+
+.logo-tile {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.logo-tile img {
+  height: 30px;
+  width: auto;
+  filter: drop-shadow(0 2px 12px rgba(217, 164, 65, .25));
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--hair-soft);
+  padding: 14px 0 12px 0;
+}
+
+.footer-text {
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--ink-3);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-bottom: 16px;
+  }
+
+  .logo-tile {
+    justify-content: center;
+  }
+
+  .logo-tile img {
+    height: 56px;
+  }
+}

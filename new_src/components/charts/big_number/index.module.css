@@ -1,0 +1,46 @@
+.kpi {
+    justify-content: center;
+    gap: 2px;
+}
+
+.kpi_l {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: var(--t4);
+    line-height: 1.25;
+}
+
+.kpi_v {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.6px;
+    color: var(--t1);
+}
+
+.kpi_v__u {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--t3);
+    letter-spacing: 0;
+    margin-left: 3px;
+}
+
+.kpi_d {
+    font-size: 11px;
+    color: var(--t3);
+}
+
+.freq_in {
+    color: var(--t4);
+}
+
+.trend_up {
+    color: #007c3b;
+}
+
+.trend_down {
+    color: #d93025;
+}
